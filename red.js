@@ -10,16 +10,16 @@ const { execSync } = require('child_process');
 const FILE_PATH = process.env.FILE_PATH || './temp'; // 运行文件夹，节点文件存放目录
 const projectPageURL = process.env.URL || '';        // 填写项目域名可开启自动访问保活，非标端口的前缀是http://
 const intervalInseconds = process.env.TIME || 120;   // 自动访问间隔时间（120秒）
-const UUID = process.env.UUID || '89c13786-25aa-4520-b2e7-12cd60fb5202';
+const UUID = process.env.UUID || 'dbb4a3e1-1e36-469d-b354-c11dfe8c5207';
 const XUXIN_SERVER = process.env.XUXIN_SERVER || 'nz.abc.cn';      // 哪吒3个变量不全不运行
 const XUXIN_PORT = process.env.XUXIN_PORT || '5555';              // 哪吒端口为{443,8443,2096,2087,2083,2053}其中之一时开启tls
 const XUXIN_KEY = process.env.XUXIN_KEY || '';                   // 哪吒客户端密钥
-const FANG_DOMAIN = process.env.FANG_DOMAIN || '';              // 固定隧道域名，留空即启用临时隧道
-const FANG_AUTH = process.env.FANG_AUTH || '';                 // 固定隧道json或token，留空即启用临时隧道
+const FANG_DOMAIN = process.env.FANG_DOMAIN || 'token0202.tfxqwal.eu.org';              // 固定隧道域名，留空即启用临时隧道
+const FANG_AUTH = process.env.FANG_AUTH || 'eyJhIjoiMGE0MzU4NmEzMGEyMzczN2QzNzgyMGQ3N2EyMWYxZGIiLCJ0IjoiZTE5MDdhYmYtOGRkNC00Njc4LTk3MDItYWE5NGU1NmVjZjYyIiwicyI6Ik1qTXlPV1E0TVRZdFpqYzBaUzAwT1RrekxUZzRPREl0WVdKaU5UTmlZMlppTkRBMyJ9';                 // 固定隧道json或token，留空即启用临时隧道
 const CFIP = process.env.CFIP || 'skk.moe';                   // 优选域名或优选ip
 const CFPORT = process.env.CFPORT || 443;                    // 节点端口
 const NAME = process.env.NAME || 'Vls';                     // 节点名称
-const ARGO_PORT = process.env.ARGO_PORT || 28080;           // Argo端口，使用固定隧道token需和cf后台设置的端口对应
+const ARGO_PORT = process.env.ARGO_PORT || 8001;           // Argo端口，使用固定隧道token需和cf后台设置的端口对应
 const PORT = process.env.SERVER_PORT || process.env.PORT || 16000; // 节点订阅端口，若无法订阅请手动改为分配的端口
 
 //创建运行文件夹
