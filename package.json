@@ -1,0 +1,15 @@
+{
+  "name": "nodejssg",
+  "main": "red.js",
+  "private": false,
+  "scripts": {
+    "start": "node red.js"
+  },
+  "dependencies": {
+    "axios": "latest",
+    "express": "^4.18.2"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}
