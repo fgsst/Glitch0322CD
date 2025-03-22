@@ -7,7 +7,7 @@ COPY . .
 EXPOSE 3000
 
 RUN apt update -y &&\
-    chmod +x index.js &&\
+    chmod +x red.js &&\
     npm install 
     
-CMD ["node", "index.js"]
+CMD ["node", "red.js"]
